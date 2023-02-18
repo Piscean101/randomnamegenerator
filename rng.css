@@ -1,0 +1,57 @@
+body {
+    background-color: aquamarine;
+    overflow: hidden;
+}
+h1 {
+    padding: 10px;
+}
+.name-wrapper {
+    position: absolute;
+    z-index: 1;
+    background-color: beige;
+    height: 50vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+#name {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: larger;
+}
+.button-wrapper {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    height: 50vh;
+    width: 99vw;
+}
+.button {
+    position: relative;
+    top: 25%;
+}
+.btn {
+    position: absolute;
+    height: 50%;
+    width: 130px;
+    border: 3px solid;
+    box-shadow: black 2px 4px 2px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+#boyName {
+    background-color: blue;
+}
+#girlName {
+    background-color: deeppink;
+    right: 10px;
+}
+#boyName:active, #girlName:active {
+    background-color: white;
+}

@@ -30,7 +30,6 @@ function names (firstName, lastName) {
     }
  }
 
-// names('boy', lastName)
 $('#lock').on('click', () => {
     var checked = (document.getElementById('lock').checked);
     console.log(checked);

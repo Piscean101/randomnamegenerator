@@ -60,3 +60,12 @@ h1 {
     position: relative;
     top: 20%;
 }
+@media only screen and (max-width:500px) {
+    .btn {
+        width: 75px;
+    }
+    .name-lock {
+        position: absolute;
+        top: 10px;
+    }
+}

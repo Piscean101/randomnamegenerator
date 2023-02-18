@@ -53,5 +53,10 @@ h1 {
     right: 10px;
 }
 #boyName:active, #girlName:active {
-    background-color: white;
+    background-color: rgb(154, 154, 154);
+    color: white;
+}
+.name-lock {
+    position: relative;
+    top: 20%;
 }

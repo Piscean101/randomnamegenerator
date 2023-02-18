@@ -4,6 +4,7 @@ let b = boyName.length;
 let g = girlName.length;
 let l = lastName.length;
 console.log(b, g, l);
+console.log(b + g + l);
 
 function names (firstName, lastName) { 
     var checked = (document.getElementById('lock').checked);

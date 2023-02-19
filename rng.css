@@ -18,6 +18,7 @@ h1 {
 #name {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -36,7 +37,7 @@ h1 {
     top: 25%;
 }
 .btn {
-    position: absolute;
+    position: relative;
     height: 40%;
     width: 130px;
     border: 3px solid black;
@@ -59,16 +60,16 @@ h1 {
     background-color: rgb(154, 154, 154);
     color: white;
 }
-.name-lock {
-    position: relative;
-    top: 20%;
+#name-lock {
+    visibility: hidden;
+    position: absolute;
+    top: 30%;
 }
 @media only screen and (max-width:500px) {
     .btn {
         width: 75px;
     }
-    .name-lock {
-        position: absolute;
+    #name-lock {
         top: 75%;
     }
 }

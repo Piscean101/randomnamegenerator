@@ -50,5 +50,8 @@ $('#girlName').on('click', () => {
         names('girl', lastName)
     )
 });
+$('.btn').on('click', () => {
+    document.getElementById('name-lock').style.visibility = 'visible';
+})
 
 

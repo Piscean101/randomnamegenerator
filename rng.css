@@ -1,6 +1,8 @@
 body {
     background-color: aquamarine;
     overflow: hidden;
+    height: 100% !important;
+    width: 100vw;
 }
 h1 {
     padding: 10px;
@@ -11,7 +13,7 @@ h1 {
     z-index: 1;
     background-color: beige;
     height: 50vh;
-    width: 100vw;
+    width: 100%;
     left: 0;
     top: 0;
     right: 0;

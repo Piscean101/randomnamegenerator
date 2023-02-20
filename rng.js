@@ -6,9 +6,9 @@ let b = boyName.length;
 let g = girlName.length;
 let l = lastName.length;
 let t = b + g + l
-console.log(`${b} ${(b/t).toFixed(2)*100}%`);
-console.log(`${g} ${(g/t).toFixed(2)*100}%`);
-console.log(`${l} ${(l/t).toFixed(2)*100}%`);
+console.log(`Boy Names ${b} ${(b/t*100).toFixed(1)}%`);
+console.log(`Girl Names ${g} ${(g/t*100).toFixed(1)}%`);
+console.log(`Last Names ${l} ${(l/t*100).toFixed(1)}%`);
 console.log(t);
 
 function names (firstName, lastName) { 

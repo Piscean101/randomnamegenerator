@@ -1,7 +1,7 @@
 body {
     background-color: aquamarine;
     overflow: hidden;
-    height: 100% !important;
+    height: 100vh !important;
     width: 100vw;
 }
 h1 {
@@ -12,7 +12,7 @@ h1 {
     position: absolute;
     z-index: 1;
     background-color: beige;
-    height: 50vh;
+    max-height: 60vh;
     width: 100%;
     left: 0;
     top: 0;

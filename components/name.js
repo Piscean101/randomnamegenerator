@@ -47,7 +47,7 @@ export const girlName = [
     'Queenie','Quinn',
     'Rachel','Ramona','Renee','Riley','Rita','Rose','Rosetta','Roslyn','Ruth',
     'Saadia','Samantha','Sarabi','Sarah','Sasha','Selena','Serena','Serenity','Shannel','Sharon','Shanti','Shauna','Sidibe','Sminty','Sonya','Sophia','Stella','Sumaya','Summer','Sugar','Suji','Suki','Susan','Sweetie',
-    'Tanya','Tasha','Tatianna','Taylor','Tessa','Tiffany','Tracy','Trixie','Truth','Tulip','Tyra',
+    'Tanya','Tasha','Tatianna','Taylor','Tessa','Tiffany','Tracy','Trina','Trixie','Truth','Tulip','Tyra',
     'Unity','Ursula','Ulba',
     'Venus','Vicky','Victory','Volha',
     'Wanda','Wendy','Whitney','Willow','Wynona',
@@ -59,7 +59,7 @@ export const girlName = [
 export const lastName = [
     'Adair','Addams','Adler','Agusto','Albani','Allegro','Ali','Alvarez','Anderson','Angelou','Armstrong','Asai','Ashford','Aubertin','Avery',
     'Bailey','Baker','Ballo','Barbarelli','Barlowe','Bassett','Bastion','Beach','Bell','Belsky','Bennett','Benson','Bernard','Berry','Bertz','Besselman','Bettany','Bhandari','Bickler','Bidinger','Blacksmith','Boston','Bravo','Brooks','Brown','Burton',
-    'Cadelle','Carrington','Carter','Caville','Chanel','Chaney','Clarke','Coin','Colby','Coleman','Coolidge','Colombus','Colt','Conley','Conroy','Cortez','Cortova','Crest','Cruise','Cruz',
+    'Cadelle','Carrington','Carter','Caville','Chanel','Chaney','Chapman','Clarke','Coin','Colby','Coleman','Coolidge','Colombus','Colt','Conley','Conroy','Cortez','Cortova','Crest','Cruise','Cruz',
     'Danger','Dawson','Dejardin','Delaware','Delong','DeNeres','Diamond','Diaz','Drake','Dupree',
     'Edmonton','Egger','Eli','Elrod','Evans',
     'Farsi','Fauci','Fence','Fletcher','Fern','Ferrara','Fester','Finch','Finder','Finland','Fontaine','Ford','Forrester','Founder','Fox','Fugi',
@@ -79,7 +79,7 @@ export const lastName = [
     'Tailor','Tanner','Tate','Tatum','Taylor','Tennessee','Thatcher','Theodore','Thomas','Thompson','Thrombey','Tisdale','Toledo','Tolke','Tran','Trooper','Trusket',
     'Uqwu','Uzman',
     'Vasili','Vaughan','Velour','Virgin','Voellinger','Von Eschen', 'Von Feldt','Vox',
-    'Washington','Westberg','Watson','Wayans','Weissman','West','White','Wild','Williams','Wilson','Wong',
+    'Washington','Westberg','Watson','Wayans','Weissman','West','White','Wild','Williams','Wilson','Winters','Wong',
     'Xing',
     'Yamasaki','Yoon','York','Young',
     'Zaza','Zoeller','Zuckerman'

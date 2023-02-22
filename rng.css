@@ -3,29 +3,36 @@ body {
     overflow: hidden;
     height: 100vh !important;
     width: 100vw;
+    padding: none;
 }
 h1 {
     padding: 10px;
 }
 .name-wrapper {
-    padding-top: 15%;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    height: 100px; 
-    background-color: beige;
-    width: 100%;
-    left: 0;
+    min-height: 40vh; 
+    background-color: rgb(159, 110, 205);
+    width: 100vw;
     top: 0;
+    left: 0; 
     right: 0;
+    padding: none;
 }
 #name {
-    position: relative;
-    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     font-size: larger;
+    z-index: 3;
 }
 .button-wrapper {
     display: flex;

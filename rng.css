@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: rgb(159, 110, 205);
     overflow: hidden;
     height: 100vh !important;
     width: 100vw;
@@ -33,6 +33,11 @@ h1 {
     bottom: 0;
     font-size: larger;
     z-index: 3;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px black;
+    height: 75%;
+    width: 75%;
+    margin: 50px auto;
 }
 .button-wrapper {
     display: flex;
@@ -51,8 +56,9 @@ h1 {
     height: 40%;
     width: 130px;
     border: 3px solid black;
+    border-radius: 50%;
     color: darkblue;
-    box-shadow: black 2px 4px 2px;
+    box-shadow: black 2px 2px;
 }
 .btn:hover {
     cursor: pointer;
@@ -78,9 +84,18 @@ h1 {
 }
 @media only screen and (max-width:500px) {
     .btn {
-        width: 75px;
+        width: 100px;
     }
     #name-lock {
         top: 75%;
+    }
+    #name {
+        height: 90%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .nameholder {
+        margin: 0px auto;
+        text-align: center;
     }
 }

@@ -111,6 +111,9 @@ body {
     z-index: 2;
 }
 @media only screen and (max-width:500px) {
+    body {
+        background-image: linear-gradient(to bottom, lightgrey, var(--background-color), var(--background-color));
+    }
     .btn {
         width: 145px;
         padding: 6vw;

@@ -1,12 +1,19 @@
-body {
-    background-color: rgb(159, 110, 205);
-    overflow: hidden;
-    height: 100vh !important;
-    width: 100vw;
-    padding: none;
+:root {
+    --background-color: rgb(159,110,205);
+    --grey: rgb(80, 80, 80);
+    --male: rgb(32, 106, 255);
+    --malefaded: rgba(32, 106, 255, 0.45);
+    --female: deeppink;
+    --femalefaded: rgba(255, 20, 145, 0.45);
+    --faded: rgba(255, 255, 255, 0.25);
 }
-h1 {
-    padding: 10px;
+body {
+    /* background-color: var(--background-color); */
+    background-image: linear-gradient(to bottom, transparent, lightgrey, var(--background-color), var(--background-color));
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    padding: none;
 }
 .name-wrapper {
     position: absolute;
@@ -16,7 +23,6 @@ h1 {
     align-items: center;
     z-index: 1;
     min-height: 40vh; 
-    background-color: rgb(159, 110, 205);
     width: 100vw;
     top: 0;
     left: 0; 
@@ -25,23 +31,26 @@ h1 {
 }
 #name {
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     top: 0;
     bottom: 0;
     font-size: larger;
     z-index: 3;
-    border: 2px solid white;
-    box-shadow: 0px 0px 10px black;
+    border: 4px solid white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 12px black;
     height: 75%;
-    width: 75%;
     margin: 50px auto;
+    color: var(--grey);
+    padding: 1vw 3vw;
 }
 .button-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: absolute;
     bottom: 0;
     height: 50vh;
@@ -55,26 +64,34 @@ h1 {
     position: relative;
     height: 40%;
     width: 130px;
-    border: 3px solid black;
-    border-radius: 50%;
-    color: darkblue;
-    box-shadow: black 2px 2px;
+    border: 5px solid;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px var(--grey);
 }
 .btn:hover {
     cursor: pointer;
+    box-shadow: 0px 0px 20px white;
 }
 #boyName {
-    background-color: rgb(32, 106, 255);
+    /* background-color: rgb(32, 106, 255); */
+    background-color: transparent;
+    border-color: var(--malefaded);
     z-index: 2;
 }
 #girlName {
-    background-color: deeppink;
-    right: 10px;
+    /* background-color: deeppink; */
+    background-color: transparent;
+    border-color: var(--femalefaded);
     z-index: 2;
 }
-#boyName:active, #girlName:active {
-    background-color: rgb(154, 154, 154);
-    color: white;
+#boyName:active {
+    background-color: var(--male);
+    border: 7px solid var(--faded);
+}
+
+#girlName:active {
+    background-color: var(--female);
+    border: 7px solid var(--faded);
 }
 #name-lock {
     visibility: hidden;
@@ -90,7 +107,13 @@ h1 {
         top: 75%;
     }
     #name {
-        height: 90%;
+        height: 70%;
+        justify-content: center;
+        border: none;
+        box-shadow: none;
+        font-size: 150%;
+        color: var(--background-color);
+        -webkit-text-stroke: 1px var(--grey);
     }
 }
 @media only screen and (max-width: 360px) {

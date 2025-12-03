@@ -1,4 +1,4 @@
-import { boyName, girlName, lastName } from "./components/name.js";
+import { boyName, girlName, lastName, name } from "./components/name.js";
 
 
 var checked = (document.getElementById('lock').checked); 
@@ -13,6 +13,8 @@ console.log(t);
 
 function names (firstName, lastName) { 
     var checked = (document.getElementById('lock').checked);
+    var nameplate = document.getElementById('name');
+    !nameplate.classList.contains('newname') ? nameplate.classList.add('newname') : null;
     const lockname = [];
     if (checked) {
         lockname.push(document.getElementById('lastname').innerHTML);

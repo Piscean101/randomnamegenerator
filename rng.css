@@ -1,5 +1,6 @@
 :root {
     --background-color: rgb(159,110,205);
+    --btn-border: rgba(255, 255, 255, 0.6);
     --grey: rgb(80, 80, 80);
     --male: rgb(32, 106, 255);
     --malefaded: rgba(32, 106, 255, 0.20);
@@ -7,12 +8,13 @@
     --femalefaded: rgba(255, 20, 145, 0.20);
     --faded: rgba(255, 255, 255, 0.25);
 }
+html { height: 100vh; width: 100%; }
 body {
     /* background-color: var(--background-color); */
     background-image: linear-gradient(to bottom, transparent, lightgrey, var(--background-color), var(--background-color));
     overflow: hidden;
     position: relative;
-    height: 100vh;
+    height: 100dvh;
     margin: 0;
     border: 3px solid var(--grey)
 }
@@ -39,6 +41,7 @@ body {
     position: relative;
     top: 150px;
     bottom: 0;
+    letter-spacing: 1.5px;
     font-size: larger;
     z-index: 3;
     border-radius: 30px;
@@ -50,8 +53,9 @@ body {
     transition: all 800ms ease;
 }
 #name.newname {
-    border: 3px solid white;
-    transform: translateY(-50px);
+    border: 3px solid var(--btn-border);
+    transform: translateY(-60px);
+    max-width: 85vw;
 }
 .button-wrapper {
     display: flex;
@@ -75,25 +79,29 @@ body {
     border: 3px solid;
     border-radius: 100%;
     padding: 2vw;
-    box-shadow: 0px 0px 15px var(--grey);
+    /* box-shadow: 0px 0px 15px var(--grey); */
     transition: all 350ms ease;
 }
 .btn h3 img { opacity: 0.4 }
-.btn:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 20px white;
-}
 #boyName {
     /* background-color: rgb(32, 106, 255); */
     background-color: transparent;
-    border-color: var(--malefaded);
+    /* border-color: var(--grey); */
+    border-color: var(--btn-border);
+    box-shadow: 0px 0px 30px var(--malefaded);
     z-index: 2;
 }
 #girlName {
     /* background-color: deeppink; */
     background-color: transparent;
-    border-color: var(--femalefaded);
+    /* border-color: var(--grey); */
+    border-color: var(--btn-border);
+    box-shadow: 0px 0px 30px var(--femalefaded);
     z-index: 2;
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px white;
 }
 #boyName:active {
     background-color: var(--male);
@@ -128,7 +136,7 @@ body {
         box-shadow: none;
         font-size: 150%;
         color: var(--background-color);
-        -webkit-text-stroke: 1px var(--grey);
+        -webkit-text-stroke: 2px var(--grey);
     }
 }
 @media only screen and (max-width: 360px) {
